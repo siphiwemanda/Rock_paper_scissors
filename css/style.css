@@ -1,0 +1,34 @@
+html {
+    block-size: 100%;
+    inline-size: 100%;
+    background: hsl(0 0% 85%);
+}
+body {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5vmin;
+    place-content: center;
+}
+
+.cards{
+    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+    background: hsl(0 0% 100%);
+    color: hsl(200 50% 20%);
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 15vmin;
+    height: 15vmin;
+    place-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 2ch;
+    border: 3px solid hsl(0 0% 83%);
+}
+.User_Choice{
+    display: flex;
+}

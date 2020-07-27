@@ -27,6 +27,7 @@ function getComputerChoice(){
 
     }
 }
+
 function determineWinner(userChoice, computerChoice) {
     if(userChoice === computerChoice){
         let message = "this game was a tie"
@@ -71,7 +72,6 @@ function determineWinner(userChoice, computerChoice) {
         document.getElementById("who_won").innerText = message
         return message
     }
-
 }
 
 function choice(id) {
