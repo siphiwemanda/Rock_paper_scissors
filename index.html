@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 <div>
-    <diV>
-        <img id="paper" src="img/plane.png" width="100" height="100" onclick="choice(this.id)">
-        <img id="scissors"  src="img/scissors.png" wwidth="100" height="100" onclick="choice(this.id)">
-        <img id="rock" src="img/electric-guitar.png" width="100" height="100" onclick="choice(this.id)">
+    <diV class="User_Choice">
+        <img class="cards" id="paper" src="img/plane.png" width="100" height="100" onclick="choice(this.id)">
+        <img class="cards" id="scissors"  src="img/scissors.png" wwidth="100" height="100" onclick="choice(this.id)">
+        <img class="cards" id="rock" src="img/electric-guitar.png" width="100" height="100" onclick="choice(this.id)">
     </div>
-    <div>
-        <img id="computers_choice" width="100" height="100">
+    <div class="Comp_Choice">
+        <img class="cards" id="computers_choice" width="100" height="100">
     </div>
     <div>
         <h1 id="who_won"></h1>
@@ -20,5 +21,5 @@
 </div>
 
 </body>
-<script src="rockpaperlogic.js"></script>
+<script src="js/rockpaperlogic.js"></script>
 </html>
