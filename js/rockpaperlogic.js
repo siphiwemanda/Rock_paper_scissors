@@ -6,7 +6,6 @@ function getUserChoice(userInput) {
         console.log("error")
     }
 }
-
 function getComputerChoice(){
     let randomNumber = Math.floor(Math.random() * 3);
     const paper = "img/plane.png";
@@ -39,7 +38,9 @@ function determineWinner(userChoice, computerChoice) {
             let message = "Computer won"
             document.getElementById("who_won").innerText = message
             return message
-        }else{
+        }
+        else
+        {
             let message = "You won"
             document.getElementById("who_won").innerText = message
             return message
@@ -68,6 +69,7 @@ function determineWinner(userChoice, computerChoice) {
         }
     }
     if (userChoice === 'bomb'){
+        document.getElementById("computers_choice").src = "img/explosion.png";
         let message = 'BOOM, you won!'
         document.getElementById("who_won").innerText = message
         return message

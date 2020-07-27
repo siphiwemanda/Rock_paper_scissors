@@ -2,6 +2,7 @@ html {
     block-size: 100%;
     inline-size: 100%;
     background: hsl(0 0% 85%);
+    overflow: hidden;
 }
 body {
     min-block-size: 100%;
@@ -31,4 +32,11 @@ body {
 }
 .User_Choice{
     display: flex;
+}
+
+#bomb{
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    transform: rotate(-80deg);
 }
