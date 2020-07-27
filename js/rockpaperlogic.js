@@ -30,17 +30,17 @@ function getComputerChoice(){
 
 function determineWinner(userChoice, computerChoice) {
     if(userChoice === computerChoice){
-        let message = "this game was a tie"
+        let message = "This game was a tie"
         document.getElementById("who_won").innerText = message
        return message
     }
     if(userChoice === 'rock'){
         if(computerChoice === 'paper'){
-            let message = "computer won"
+            let message = "Computer won"
             document.getElementById("who_won").innerText = message
             return message
         }else{
-            let message = "you won"
+            let message = "You won"
             document.getElementById("who_won").innerText = message
             return message
         }
@@ -51,18 +51,18 @@ function determineWinner(userChoice, computerChoice) {
             document.getElementById("who_won").innerText = message
             return message
         }else {
-            let message = 'you won'
+            let message = 'You won'
             document.getElementById("who_won").innerText = message
             return message
         }
     }
     if (userChoice === 'scissors'){
         if(computerChoice === 'rock'){
-            let message = 'computer won'
+            let message = 'Computer won'
             document.getElementById("who_won").innerText = message
             return message
         }else{
-            let message = 'hey you won'
+            let message = 'Hey you won'
             document.getElementById("who_won").innerText = message
             return message
         }
