@@ -22,50 +22,46 @@ function getComputerChoice(){
             document.getElementById("computers_choice").src = scissors;
             return 'scissors';
         default:
+            document.getElementById("computers_choice").src = paper;
             return 'paper'
-
     }
 }
 
 function determineWinner(userChoice, computerChoice) {
+    let UserWon = "You won"
+    let ComputerWon = "Computer won"
+    let Draw = "This game was a tie"
     if(userChoice === computerChoice){
-        let message = "This game was a tie"
-        document.getElementById("who_won").innerText = message
-       return message
+        document.getElementById("who_won").innerText = Draw
+       return Draw
     }
     if(userChoice === 'rock'){
         if(computerChoice === 'paper'){
-            let message = "Computer won"
-            document.getElementById("who_won").innerText = message
-            return message
+            document.getElementById("who_won").innerText = ComputerWon
+            return ComputerWon
         }
         else
         {
-            let message = "You won"
-            document.getElementById("who_won").innerText = message
-            return message
+            document.getElementById("who_won").innerText = UserWon
+            return UserWon
         }
     }
     if(userChoice === 'paper'){
         if(computerChoice === 'scissors'){
-            let message = 'The computer won'
-            document.getElementById("who_won").innerText = message
-            return message
+            document.getElementById("who_won").innerText = ComputerWon
+            return ComputerWon
         }else {
-            let message = 'You won'
-            document.getElementById("who_won").innerText = message
-            return message
+            document.getElementById("who_won").innerText = UserWon
+            return UserWon
         }
     }
     if (userChoice === 'scissors'){
         if(computerChoice === 'rock'){
-            let message = 'Computer won'
-            document.getElementById("who_won").innerText = message
-            return message
+            document.getElementById("who_won").innerText = ComputerWon
+            return ComputerWon
         }else{
-            let message = 'Hey you won'
-            document.getElementById("who_won").innerText = message
-            return message
+            document.getElementById("who_won").innerText = UserWon
+            return UserWon
         }
     }
     if (userChoice === 'bomb'){

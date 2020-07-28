@@ -1,7 +1,7 @@
 html {
     block-size: 100%;
     inline-size: 100%;
-    background: hsl(0 0% 85%);
+    background: #d9d9d9;
     overflow: hidden;
 }
 body {
@@ -16,9 +16,9 @@ body {
 }
 
 .cards{
-    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
-    background: hsl(0 0% 100%);
-    color: hsl(200 50% 20%);
+    box-shadow: 0 1rem 2rem hsl(0, 0%, 20%);
+    background: hsl(0, 0%, 100%);
+    color: hsl(200, 50%, 20%);
     line-height: 1.5;
     font-size: 1.5rem;
     font-weight: 300;
@@ -28,10 +28,11 @@ body {
     text-align: center;
     padding: 15px;
     border-radius: 2ch;
-    border: 3px solid hsl(0 0% 83%);
+    border: 1px solid hsl(0, 0%, 83%);
 }
 .User_Choice{
     display: flex;
+    padding-bottom: 20px;
 }
 
 #bomb{
@@ -39,4 +40,26 @@ body {
     bottom: -50px;
     right: -50px;
     transform: rotate(-80deg);
+}
+.title{
+    text-align: center;
+}
+
+#who_won{
+    text-align: center;
+}
+
+.cards:hover {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity .3s linear 0s;
+
+}
+
+.User_Row{
+    padding: 15px;
+}
+
+.Comp_Choice{
+    display: flex;
 }
