@@ -66,7 +66,18 @@ function whoWonMessage(message) {
     document.getElementById("who_won").innerText = message
     return message
 }
+function hideBomb(){
+    let randomNumber = Math.floor(Math.random() * 10);
+    console.log(randomNumber)
+    let bomb = document.getElementById("bomb")
+    if(randomNumber%2 === 0){
+        bomb.style.visibility = "visible"
+    }else {
+        bomb.style.visibility = "hidden"
+    }
+}
 function choice(id) {
+    hideBomb();
     const userChoice = getUserChoice(id);
     const computerChoice = getComputerChoice();
     console.log('You threw: ' + userChoice);

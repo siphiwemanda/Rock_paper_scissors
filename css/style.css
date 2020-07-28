@@ -38,6 +38,7 @@ body {
     bottom: -50px;
     right: -50px;
     transform: rotate(-80deg);
+    visibility: hidden;
 }
 .title{
     text-align: center;
@@ -54,4 +55,5 @@ body {
 }
 #computers_choice{
     padding: 30px;
+
 }
