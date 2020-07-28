@@ -39,9 +39,7 @@ function determineWinner(userChoice, computerChoice) {
         if(computerChoice === 'paper'){
             document.getElementById("who_won").innerText = ComputerWon
             return ComputerWon
-        }
-        else
-        {
+        } else {
             document.getElementById("who_won").innerText = UserWon
             return UserWon
         }

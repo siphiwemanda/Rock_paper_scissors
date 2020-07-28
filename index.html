@@ -9,19 +9,19 @@
 <div>
     <h1 class="title">Rock, Paper, Scissors</h1>
     <diV class="User_Choice">
-        <div class="User_Row">  <img class="cards" id="paper" src="img/plane.png" width="100" height="100" onclick="choice(this.id)"></div>
-        <div class="User_Row">   <img class="cards" id="scissors"  src="img/scissors.png" wwidth="100" height="100" onclick="choice(this.id)"></div>
-        <div class="User_Row">  <img class="cards" id="rock" src="img/electric-guitar.png" width="100" height="100" onclick="choice(this.id)"></div>
+        <div class="User_Row">  <img style="cursor:pointer" class="cards" id="paper" src="img/plane.png" width="100" height="100" onclick="choice(this.id)"></div>
+        <div class="User_Row">   <img style="cursor:pointer" class="cards" id="scissors"  src="img/scissors.png" wwidth="100" height="100" onclick="choice(this.id)"></div>
+        <div class="User_Row">  <img style="cursor:pointer" class="cards" id="rock" src="img/electric-guitar.png" width="100" height="100" onclick="choice(this.id)"></div>
     </div>
     <div class="Comp_Choice">
-        <div class="Comp_Row"> <img class="cards" id="computers_choice" width="100" height="100"> </div>
+        <div class="Comp_Row"> <img style="cursor:wait" class="cards" id="computers_choice" width="100" height="100"> </div>
 
     </div>
     <div>
         <h1 id="who_won"></h1>
     </div>
 </div>
-<div><img src="img/bomb.png" id="bomb" width="100" height="100" onclick="choice(this.id)"></div>
+<div><img src="img/bomb.png"  style="cursor:pointer"  id="bomb" width="100" height="100" onclick="choice(this.id)"></div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/rockpaperlogic.js"></script>
