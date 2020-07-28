@@ -14,7 +14,6 @@ body {
     gap: 5vmin;
     place-content: center;
 }
-
 .cards{
     box-shadow: 0 1rem 2rem hsl(0, 0%, 20%);
     background: hsl(0, 0%, 100%);
@@ -34,7 +33,6 @@ body {
     display: flex;
     padding-bottom: 20px;
 }
-
 #bomb{
     position: absolute;
     bottom: -50px;
@@ -44,22 +42,12 @@ body {
 .title{
     text-align: center;
 }
-
 #who_won{
     text-align: center;
 }
-
-.cards:hover {
-    display: inline-block;
-    opacity: 1;
-    transition: opacity .3s linear 0s;
-
-}
-
 .User_Row{
     padding: 15px;
 }
-
 .Comp_Choice{
     position: relative;
     left: 160px;
