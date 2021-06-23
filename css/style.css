@@ -10,9 +10,6 @@ body {
 p{
     color:white ;
 }
-
-
-
 .attribution{
     font-size: 11px;
     text-align: center;
@@ -21,4 +18,35 @@ p{
 
 .attribution a{
     color: hsl(228, 45%, 44%);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.Logo-Section{
+    display: flex;
+    flex-direction: row;
+    border-style:solid;
+    border-color: hsl(217, 16%, 45%);
+    border-radius:25px;
+
+}
+
+
+.Score{
+    background: white;
+    border-radius: 25px;
+    padding: 50px;
+
+}
+#score-number{
+    color:hsl(229, 25%, 31%)
+}
+#score-text{
+    color: hsl(229, 64%, 46%);
 }
