@@ -1,59 +1,24 @@
 html {
-    block-size: 100%;
-    inline-size: 100%;
-    background: #d9d9d9;
-    overflow: hidden;
+    min-height: 100%;
 }
 body {
-    min-block-size: 100%;
-    min-inline-size: 100%;
-    margin: 0;
-    box-sizing: border-box;
-    display: grid;
-    grid-auto-flow: column;
-    gap: 5vmin;
-    place-content: center;
-}
-.cards{
-    box-shadow: 0 1rem 2rem hsl(0, 0%, 20%);
-    background: hsl(0, 0%, 100%);
-    color: hsl(200, 50%, 20%);
-    line-height: 1.5;
-    font-size: 1.5rem;
-    font-weight: 300;
-    width: 15vmin;
-    height: 15vmin;
-    place-items: center;
-    text-align: center;
-    padding: 15px;
-    border-radius: 2ch;
-    border: 1px solid hsl(0, 0%, 83%);
-}
-.User_Choice{
-    display: flex;
-    padding-bottom: 20px;
-}
-#bomb{
-    position: absolute;
-    bottom: -50px;
-    right: -50px;
-    transform: rotate(-80deg);
-    visibility: hidden;
-}
-.title{
-    text-align: center;
-}
-#who_won{
-    text-align: center;
-}
-.User_Row{
-    padding: 15px;
-}
-.Comp_Choice{
-    position: relative;
-    left: 160px;
-}
-#computers_choice{
-    padding: 30px;
 
+   background: radial-gradient(closest-side,hsl(214, 47%, 23% ), hsl(237, 49%, 15%)) ;
+
+}
+
+p{
+    color:white ;
+}
+
+
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
 }
