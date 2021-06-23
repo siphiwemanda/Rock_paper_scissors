@@ -31,17 +31,21 @@ p{
 .Logo-Section{
     display: flex;
     flex-direction: row;
+    align-content: center;
+    align-items: center;
     border-style:solid;
     border-color: hsl(217, 16%, 45%);
     border-radius:25px;
+    width: 500px;
+    gap: 250px;
 
 }
 
 
 .Score{
     background: white;
-    border-radius: 25px;
-    padding: 50px;
+    border-radius: 15px;
+    padding: 10px 35px;
 
 }
 #score-number{
@@ -49,4 +53,13 @@ p{
 }
 #score-text{
     color: hsl(229, 64%, 46%);
+}
+.circle{
+    border-radius: 50%;
+    background: aquamarine;
+    width: 100px;
+    height: 100px;
+}
+.Main{
+    padding-top: 50px;
 }
