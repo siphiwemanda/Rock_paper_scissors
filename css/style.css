@@ -10,21 +10,31 @@ body {
 p{
     color:white ;
 }
-.attribution{
+.item-attribution{
     font-size: 11px;
     text-align: center;
     color: white;
 }
 
-.attribution a{
+.item-attribution a{
     color: hsl(228, 45%, 44%);
 }
 
 .flex-container{
     display: flex;
     flex-direction: column;
+    justify-content:center;
     align-items: center;
+}
+.item-Logo{
+    order: 0;
 
+
+}
+.item-Main{
+    padding-top: 50px;
+}
+.item-Rules{
 
 }
 
@@ -40,6 +50,8 @@ p{
     gap: 250px;
 
 }
+
+
 
 
 .Score{
@@ -60,6 +72,4 @@ p{
     width: 100px;
     height: 100px;
 }
-.Main{
-    padding-top: 50px;
-}
+
