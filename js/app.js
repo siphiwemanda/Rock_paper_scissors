@@ -4,12 +4,19 @@ const Draw = "This game was a tie";
 const paper = "img/plane.png";
 const rock = "img/electric-guitar.png";
 const scissors = "img/scissors.png";
-const BOOM = 'BOOM, you won!'
-const explosion = "img/explosion.png"
+
+const Choices = {
+    Rock: "Rock",
+    Paper: "Paper",
+    Scissors: "Scissors",
+    Spock: "Spock",
+    Lizard: "Lizard"
+}
 
 function getUserChoice(userInput) {
     userInput = userInput.toLowerCase();
     if (userInput === "rock"|| "paper"|| "scissors" || "bomb"){
+        let userInput =Choices.Rock
         return userInput;
     }else{
         console.log("error")
