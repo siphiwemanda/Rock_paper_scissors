@@ -1,0 +1,9 @@
+{
+  "name": "Rock_paper_scissors",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}

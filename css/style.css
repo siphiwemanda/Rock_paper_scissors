@@ -4,6 +4,7 @@ html {
 body {
 
    background: radial-gradient(closest-side,hsl(214, 47%, 23% ), hsl(237, 49%, 15%)) ;
+    padding: 30px;
 
 }
 
@@ -14,45 +15,31 @@ p{
     font-size: 11px;
     text-align: center;
     color: white;
+
 }
 
 .item-attribution a{
     color: hsl(228, 45%, 44%);
 }
 
-.flex-container{
-    display: flex;
-    flex-direction: column;
-}
-.item-Logo{
-    align-self: center;
-}
-.item-Main{
-    align-self: center;
-}
-.item-Rules{
-    align-self: flex-end;
-}
-
-.Logo-Section{
-    display:flex;
-    border-style:solid;
-    border-color: hsl(217, 16%, 45%);
-    border-radius:25px;
-
-
-}
-
-
 
 
 .Score{
-   align-self:flex-end;
+
+    background-color: white;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+    width: 150px;
+    height: 100px;
 
 }
 
 .Logo-IMG{
-    align-self:flex-start;
+    align-self: end;
+    grid-row-gap: 10px;
+    padding-left: 20px;
+
 }
 #score-number{
     color:hsl(229, 25%, 31%)
@@ -65,5 +52,45 @@ p{
     background: aquamarine;
     width: 100px;
     height: 100px;
+}
+
+
+
+.Container{
+    height:90vh;
+    outline: 8px solid #efeb14;
+    display: grid;
+    grid-template-rows: 130px 20fr 1fr  1fr ;
+    grid-row-gap: 10px;
+}
+.item-Logo{
+
+    width: 600px;
+    height: 130px;
+    border-style:solid;
+    border-color: hsl(217, 16%, 45%);
+    border-radius:15px;
+    justify-self: center;
+    display: grid;
+    grid-template-columns:2fr 1fr;
+
+
+}
+.item-Main{
+    justify-self: center;
+    align-self: center;
+
+}
+.item-Rules{
+    align-self: end;
+    justify-self: end;
+}
+
+.item-Rules p {
+    border-style:solid;
+    border-color: hsl(217, 16%, 45%);
+    border-radius:10px;
+    width: 100px;
+    height: 25px;
 }
 
